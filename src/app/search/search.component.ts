@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Observable } from 'rxjs';
+import { TicketService } from '../ticket.service';
 
 @Component({
   selector: 'app-search',
@@ -8,16 +10,16 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent {
 
-  // location : Observable<any[]> = new Observable<any[]>;
-  // ticketSer = inject(TicketService);
+  location : Observable<any[]> = new Observable<any[]>;
+  ticketSer = inject(TicketService);
 
-  // ngOnInit(): void {
-  //   this.getAllLocations(); 
-  // }
+  ngOnInit(): void {
+    this.getAllLocations(); 
+  }
 
-  // getAllLocations(){
-  //   this.location = this.ticketSer.getLocations();
-  // }
+  getAllLocations(){
+    this.location = this.ticketSer.getLocations();
+  }
 
 
 }

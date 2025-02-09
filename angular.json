@@ -75,7 +75,13 @@
               "buildTarget": "busticket:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "serve": {
+            "options": {
+            "proxyConfig": "proxy.conf.json"
+  }
+}
+
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"

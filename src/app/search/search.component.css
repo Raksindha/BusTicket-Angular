@@ -14,7 +14,7 @@
     border: none;
   }
 
-  /* .bus-layout {
+  .bus-layout {
 background-color: #f8f9fa;
 padding: 20px;
 border-radius: 10px;
@@ -43,4 +43,4 @@ cursor: not-allowed;
 width: 30px;
 height: 30px;
 margin-right: 10px;
-} */
+}
